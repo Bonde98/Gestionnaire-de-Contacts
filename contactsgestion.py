@@ -82,6 +82,6 @@ def print_contact_par_nmb(number):
 #add_contact()
 #update_contact('8')
 #delete_contact()
-#print_contact()
-print_contact_par_nmb("774500000")
+print_contact()
+#print_contact_par_nmb("774500000")
 
