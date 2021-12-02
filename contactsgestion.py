@@ -1,3 +1,4 @@
+
 #coding:utf-8
 import sqlite3
 conn = sqlite3.connect('contacts.db')
@@ -79,9 +80,9 @@ def print_contact_par_nmb(number):
 
 
 
-add_contact()
+#add_contact()
 #update_contact('8')
 #delete_contact()
 #print_contact()
-#print_contact_par_nmb("774500000")
+print_contact_par_nmb("774500000")
 
