@@ -49,9 +49,7 @@ def update_contact():
     adresse = input("Saisir ton nouvelle adresse...")
     cur.execute("update contacts set (name,first_name,Email,number,adresse) = ((?),(?),(?),(?),(?)) where rowid = (?)",(name,first_name,Email,number,adresse,id))
     print("___Contact N:",id,"a été modifier avec succés...___")
-    cur.execute("select * from contacts where id = (?)",(id,))
-    contact_numb = cur.fetchone()
-    print("___Voici ton nouveaux contact:",contact_numb)
+    
     conn.commit()
     conn.close
 
